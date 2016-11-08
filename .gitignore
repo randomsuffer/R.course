@@ -1,6 +1,8 @@
-R.course.Rproj
-.Rproj.user
+*.Rproj*
+*.Rhistory
+.RData
 .Ruserdata
-.Rhistory
+.Rproj.user
 .DS_Store
+.gitignore
 mails.txt
