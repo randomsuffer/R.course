@@ -26,4 +26,19 @@ people <- c('petya', 'masha', 'kolya', 'igorek')
 people <- sort(people)
 
 # hometask
-# convert as.Date(‘2016-11-15’) into as.character(‘Fifteenth November 16’)
+# convert as.Date('2016-11-15') into as.character('Fifteenth November 16')
+
+a <- as.Date('2016-11-15')
+days <- c('first', 'second', 'third', 'fourth', 'fifth', 'sixth' , 'seventh',
+          'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth' , 'thirteenth',
+          'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth',
+          'nineteenth', 'twentieth', 'twenty-first', 'twenty-second', 'twenty-third',
+          'twenty-fourth', 'twenty-fifth', 'twenty-sixth', 'twenty-seventh',
+          'twenty-eighth', 'twenty-ninth', 'thirtieth', 'thirty-first')
+
+result <- paste(days[as.numeric(as.character(a, format='%d'))],
+                as.character(a, format='%B %y'))
+
+
+
+
